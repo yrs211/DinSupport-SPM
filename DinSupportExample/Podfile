@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'DinSupportExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for DinSupportExample
+
+  # AES加解密
+  pod 'CryptoSwift', '1.5.1'
+  # UDP库
+  pod 'CocoaAsyncSocket', '7.6.5'
+  # gcd timer
+  pod "ZYGCDTimer", '1.0.0'
+  # 压缩库 for os.log
+  pod 'SSZipArchive', '2.4.3'
+
+  pod 'DinSupport', :path => '../'
+
+  target 'DinSupportExampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'DinSupportExampleUITests' do
+    # Pods for testing
+  end
+
+end

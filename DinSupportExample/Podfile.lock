@@ -1,0 +1,39 @@
+PODS:
+  - CocoaAsyncSocket (7.6.5)
+  - CryptoSwift (1.5.1)
+  - DinSupport (0.0.1):
+    - CocoaAsyncSocket (= 7.6.5)
+    - CryptoSwift
+    - SSZipArchive (= 2.4.3)
+    - ZYGCDTimer (= 1.0.0)
+  - SSZipArchive (2.4.3)
+  - ZYGCDTimer (1.0.0)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket (= 7.6.5)
+  - CryptoSwift (= 1.5.1)
+  - DinSupport (from `../`)
+  - SSZipArchive (= 2.4.3)
+  - ZYGCDTimer (= 1.0.0)
+
+SPEC REPOS:
+  trunk:
+    - CocoaAsyncSocket
+    - CryptoSwift
+    - SSZipArchive
+    - ZYGCDTimer
+
+EXTERNAL SOURCES:
+  DinSupport:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CryptoSwift: c4f2debceb38bf44c80659afe009f71e23e4a082
+  DinSupport: 57854771f1a95bd336ac0ff7fd004e7f5e6d549a
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+  ZYGCDTimer: 12629306940bd8edc456568478213a9f21abfe2d
+
+PODFILE CHECKSUM: ea93d59435b6ca568e9f3a8cf43cfd20c130c168
+
+COCOAPODS: 1.13.0

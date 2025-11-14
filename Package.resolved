@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "cocoaasyncsocket",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robbiehanson/CocoaAsyncSocket.git",
+      "state" : {
+        "revision" : "dbdc00669c1ced63b27c3c5f052ee4d28f10150c",
+        "version" : "7.6.5"
+      }
+    },
+    {
+      "identity" : "cryptoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/CryptoSwift",
+      "state" : {
+        "revision" : "729e01bc9b9dab466ac85f21fb9ee2bc1c61b258",
+        "version" : "1.8.4"
+      }
+    },
+    {
+      "identity" : "ziparchive",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ZipArchive/ZipArchive.git",
+      "state" : {
+        "revision" : "38e0ce0598e06b034271f296a8e15b149c91aa19",
+        "version" : "2.4.3"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		759490512A3302AD00B88E86 /* DinSupport.docc in Sources */ = {isa = PBXBuildFile; fileRef = 759490502A3302AD00B88E86 /* DinSupport.docc */; };
+		759490572A3302AD00B88E86 /* DinSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594904C2A3302AD00B88E86 /* DinSupport.framework */; };
+		7594905C2A3302AD00B88E86 /* DinSupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594905B2A3302AD00B88E86 /* DinSupportTests.swift */; };
+		7594905D2A3302AD00B88E86 /* DinSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 7594904F2A3302AD00B88E86 /* DinSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89A1CCF12EC703C100F0C378 /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCB82EC703C100F0C378 /* Cryptor.swift */; };
+		89A1CCF22EC703C100F0C378 /* DinDeviceKCPDelivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCD42EC703C100F0C378 /* DinDeviceKCPDelivery.swift */; };
+		89A1CCF32EC703C100F0C378 /* DinKcpConvUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCE52EC703C100F0C378 /* DinKcpConvUtil.swift */; };
+		89A1CCF42EC703C100F0C378 /* DinAccessoryStringEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CC9F2EC703C100F0C378 /* DinAccessoryStringEncryption.m */; };
+		89A1CCF52EC703C100F0C378 /* DinCommunicationCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCC82EC703C100F0C378 /* DinCommunicationCallback.swift */; };
+		89A1CCF62EC703C100F0C378 /* UIDevice+DinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCE12EC703C100F0C378 /* UIDevice+DinExtension.swift */; };
+		89A1CCF72EC703C100F0C378 /* MSCT+DinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCC52EC703C100F0C378 /* MSCT+DinExtension.swift */; };
+		89A1CCF82EC703C100F0C378 /* DinDeviceUDPDelivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCD52EC703C100F0C378 /* DinDeviceUDPDelivery.swift */; };
+		89A1CCF92EC703C100F0C378 /* DinCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCCF2EC703C100F0C378 /* DinCommunicator.swift */; };
+		89A1CCFA2EC703C100F0C378 /* DinProxyDeliver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCD82EC703C100F0C378 /* DinProxyDeliver.swift */; };
+		89A1CCFB2EC703C100F0C378 /* DinCommunicationDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCC92EC703C100F0C378 /* DinCommunicationDevice.swift */; };
+		89A1CCFC2EC703C100F0C378 /* DinSupportNotificationKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCEB2EC703C100F0C378 /* DinSupportNotificationKey.swift */; };
+		89A1CCFD2EC703C100F0C378 /* DinOtherCommunicationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCD02EC703C100F0C378 /* DinOtherCommunicationHandler.swift */; };
+		89A1CCFE2EC703C100F0C378 /* DinLogStoreExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCE72EC703C100F0C378 /* DinLogStoreExporter.swift */; };
+		89A1CCFF2EC703C100F0C378 /* Bool+DinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCDC2EC703C100F0C378 /* Bool+DinExtension.swift */; };
+		89A1CD002EC703C100F0C378 /* DinCommunicationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCCD2EC703C100F0C378 /* DinCommunicationRecord.swift */; };
+		89A1CD012EC703C100F0C378 /* Double+DinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCDE2EC703C100F0C378 /* Double+DinExtension.swift */; };
+		89A1CD022EC703C100F0C378 /* Int+DinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCDF2EC703C100F0C378 /* Int+DinExtension.swift */; };
+		89A1CD032EC703C100F0C378 /* DinSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCEE2EC703C100F0C378 /* DinSupport.swift */; };
+		89A1CD042EC703C100F0C378 /* DinP2PDeliver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCD62EC703C100F0C378 /* DinP2PDeliver.swift */; };
+		89A1CD052EC703C100F0C378 /* DinCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCC72EC703C100F0C378 /* DinCommunication.swift */; };
+		89A1CD062EC703C100F0C378 /* DinSupportConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCEF2EC703C100F0C378 /* DinSupportConstants.swift */; };
+		89A1CD072EC703C100F0C378 /* DinCommunicationIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCCC2EC703C100F0C378 /* DinCommunicationIdentity.swift */; };
+		89A1CD082EC703C100F0C378 /* DSKcpUpdateTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCAD2EC703C100F0C378 /* DSKcpUpdateTimer.m */; };
+		89A1CD092EC703C100F0C378 /* DinP2PDiscover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCD72EC703C100F0C378 /* DinP2PDiscover.swift */; };
+		89A1CD0A2EC703C100F0C378 /* DinMSCTResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCC42EC703C100F0C378 /* DinMSCTResult.swift */; };
+		89A1CD0B2EC703C100F0C378 /* DinsaferAESCFBCryptor+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCBA2EC703C100F0C378 /* DinsaferAESCFBCryptor+Method.swift */; };
+		89A1CD0C2EC703C100F0C378 /* DinMSCTHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCC02EC703C100F0C378 /* DinMSCTHandler.swift */; };
+		89A1CD0D2EC703C100F0C378 /* NSData+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCA62EC703C100F0C378 /* NSData+Conversion.m */; };
+		89A1CD0E2EC703C100F0C378 /* DinAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCB62EC703C100F0C378 /* DinAccessory.swift */; };
+		89A1CD0F2EC703C100F0C378 /* Data+DinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCDD2EC703C100F0C378 /* Data+DinExtension.swift */; };
+		89A1CD102EC703C100F0C378 /* DinMSCTPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCC22EC703C100F0C378 /* DinMSCTPackage.swift */; };
+		89A1CD112EC703C100F0C378 /* DinDeviceControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCD32EC703C100F0C378 /* DinDeviceControl.swift */; };
+		89A1CD122EC703C100F0C378 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCBD2EC703C100F0C378 /* Header.swift */; };
+		89A1CD132EC703C100F0C378 /* DinDeliver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCD22EC703C100F0C378 /* DinDeliver.swift */; };
+		89A1CD142EC703C100F0C378 /* DinMSCTOptionID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCC12EC703C100F0C378 /* DinMSCTOptionID.swift */; };
+		89A1CD152EC703C100F0C378 /* DinDataConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCE32EC703C100F0C378 /* DinDataConvertor.swift */; };
+		89A1CD162EC703C100F0C378 /* DinCommunicationRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCCE2EC703C100F0C378 /* DinCommunicationRecorder.swift */; };
+		89A1CD172EC703C100F0C378 /* DinsaferAESCBCCryptor+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCB92EC703C100F0C378 /* DinsaferAESCBCCryptor+Method.swift */; };
+		89A1CD182EC703C100F0C378 /* DinGCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCE42EC703C100F0C378 /* DinGCDTimer.swift */; };
+		89A1CD192EC703C100F0C378 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCA32EC703C100F0C378 /* NSData+Base64.m */; };
+		89A1CD1A2EC703C100F0C378 /* DinSupportLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCE92EC703C100F0C378 /* DinSupportLogger.swift */; };
+		89A1CD1B2EC703C100F0C378 /* DinMSCTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCC32EC703C100F0C378 /* DinMSCTRequest.swift */; };
+		89A1CD1C2EC703C100F0C378 /* DinReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCE82EC703C100F0C378 /* DinReachability.swift */; };
+		89A1CD1D2EC703C100F0C378 /* MSCT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCBE2EC703C100F0C378 /* MSCT.swift */; };
+		89A1CD1E2EC703C100F0C378 /* CBIPAdress.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCA92EC703C100F0C378 /* CBIPAdress.m */; };
+		89A1CD1F2EC703C100F0C378 /* String+DinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCE02EC703C100F0C378 /* String+DinExtension.swift */; };
+		89A1CD202EC703C100F0C378 /* DinCommunicationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCCB2EC703C100F0C378 /* DinCommunicationGenerator.swift */; };
+		89A1CD212EC703C100F0C378 /* KCPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCB12EC703C100F0C378 /* KCPObject.m */; };
+		89A1CD222EC703C100F0C378 /* DinCommunicationEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCCA2EC703C100F0C378 /* DinCommunicationEncryptor.swift */; };
+		89A1CD232EC703C100F0C378 /* DinAccessoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCA12EC703C100F0C378 /* DinAccessoryUtil.m */; };
+		89A1CD242EC703C100F0C378 /* DinServerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCD92EC703C100F0C378 /* DinServerControl.swift */; };
+		89A1CD252EC703C100F0C378 /* DinLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCE62EC703C100F0C378 /* DinLog.swift */; };
+		89A1CD262EC703C100F0C378 /* DinSupportQueueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCEC2EC703C100F0C378 /* DinSupportQueueName.swift */; };
+		89A1CD272EC703C100F0C378 /* DinsaferRC4Cryptor+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCBB2EC703C100F0C378 /* DinsaferRC4Cryptor+Method.swift */; };
+		89A1CD282EC703C100F0C378 /* DinSupportNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCEA2EC703C100F0C378 /* DinSupportNotification.swift */; };
+		89A1CD292EC703C100F0C378 /* ikcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 89A1CCAF2EC703C100F0C378 /* ikcp.c */; };
+		89A1CD2A2EC703C100F0C378 /* cfunc.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A1CCAB2EC703C100F0C378 /* cfunc.h */; };
+		89A1CD2B2EC703C100F0C378 /* DinAccessoryUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A1CCA02EC703C100F0C378 /* DinAccessoryUtil.h */; };
+		89A1CD2C2EC703C100F0C378 /* ikcp.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A1CCAE2EC703C100F0C378 /* ikcp.h */; };
+		89A1CD2D2EC703C100F0C378 /* DSKcpUpdateTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A1CCAC2EC703C100F0C378 /* DSKcpUpdateTimer.h */; };
+		89A1CD2E2EC703C100F0C378 /* KCPObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A1CCB02EC703C100F0C378 /* KCPObject.h */; };
+		89A1CD2F2EC703C100F0C378 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A1CCA22EC703C100F0C378 /* NSData+Base64.h */; };
+		89A1CD302EC703C100F0C378 /* CBIPAdress.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A1CCA82EC703C100F0C378 /* CBIPAdress.h */; };
+		89A1CD312EC703C100F0C378 /* NSData+Conversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A1CCA52EC703C100F0C378 /* NSData+Conversion.h */; };
+		89A1CD322EC703C100F0C378 /* DinAccessoryStringEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A1CC9E2EC703C100F0C378 /* DinAccessoryStringEncryption.h */; };
+		D47635553C147CA1C02FDF8F /* libPods-DinSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32268D81CFE5AE1A81BE6E81 /* libPods-DinSupport.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		759490582A3302AD00B88E86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 759490432A3302AD00B88E86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7594904B2A3302AD00B88E86;
+			remoteInfo = DinSupport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01C4684F7B8A54C4B275A824 /* Pods-DinSupport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinSupport.release.xcconfig"; path = "Target Support Files/Pods-DinSupport/Pods-DinSupport.release.xcconfig"; sourceTree = "<group>"; };
+		32268D81CFE5AE1A81BE6E81 /* libPods-DinSupport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DinSupport.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7594904C2A3302AD00B88E86 /* DinSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DinSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7594904F2A3302AD00B88E86 /* DinSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DinSupport.h; sourceTree = "<group>"; };
+		759490502A3302AD00B88E86 /* DinSupport.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DinSupport.docc; sourceTree = "<group>"; };
+		759490562A3302AD00B88E86 /* DinSupportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinSupportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7594905B2A3302AD00B88E86 /* DinSupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinSupportTests.swift; sourceTree = "<group>"; };
+		89A1CC9E2EC703C100F0C378 /* DinAccessoryStringEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DinAccessoryStringEncryption.h; sourceTree = "<group>"; };
+		89A1CC9F2EC703C100F0C378 /* DinAccessoryStringEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DinAccessoryStringEncryption.m; sourceTree = "<group>"; };
+		89A1CCA02EC703C100F0C378 /* DinAccessoryUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DinAccessoryUtil.h; sourceTree = "<group>"; };
+		89A1CCA12EC703C100F0C378 /* DinAccessoryUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DinAccessoryUtil.m; sourceTree = "<group>"; };
+		89A1CCA22EC703C100F0C378 /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		89A1CCA32EC703C100F0C378 /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		89A1CCA52EC703C100F0C378 /* NSData+Conversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Conversion.h"; sourceTree = "<group>"; };
+		89A1CCA62EC703C100F0C378 /* NSData+Conversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Conversion.m"; sourceTree = "<group>"; };
+		89A1CCA82EC703C100F0C378 /* CBIPAdress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBIPAdress.h; sourceTree = "<group>"; };
+		89A1CCA92EC703C100F0C378 /* CBIPAdress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBIPAdress.m; sourceTree = "<group>"; };
+		89A1CCAB2EC703C100F0C378 /* cfunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cfunc.h; sourceTree = "<group>"; };
+		89A1CCAC2EC703C100F0C378 /* DSKcpUpdateTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSKcpUpdateTimer.h; sourceTree = "<group>"; };
+		89A1CCAD2EC703C100F0C378 /* DSKcpUpdateTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSKcpUpdateTimer.m; sourceTree = "<group>"; };
+		89A1CCAE2EC703C100F0C378 /* ikcp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ikcp.h; sourceTree = "<group>"; };
+		89A1CCAF2EC703C100F0C378 /* ikcp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ikcp.c; sourceTree = "<group>"; };
+		89A1CCB02EC703C100F0C378 /* KCPObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCPObject.h; sourceTree = "<group>"; };
+		89A1CCB12EC703C100F0C378 /* KCPObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCPObject.m; sourceTree = "<group>"; };
+		89A1CCB62EC703C100F0C378 /* DinAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinAccessory.swift; sourceTree = "<group>"; };
+		89A1CCB82EC703C100F0C378 /* Cryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptor.swift; sourceTree = "<group>"; };
+		89A1CCB92EC703C100F0C378 /* DinsaferAESCBCCryptor+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DinsaferAESCBCCryptor+Method.swift"; sourceTree = "<group>"; };
+		89A1CCBA2EC703C100F0C378 /* DinsaferAESCFBCryptor+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DinsaferAESCFBCryptor+Method.swift"; sourceTree = "<group>"; };
+		89A1CCBB2EC703C100F0C378 /* DinsaferRC4Cryptor+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DinsaferRC4Cryptor+Method.swift"; sourceTree = "<group>"; };
+		89A1CCBD2EC703C100F0C378 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		89A1CCBE2EC703C100F0C378 /* MSCT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSCT.swift; sourceTree = "<group>"; };
+		89A1CCC02EC703C100F0C378 /* DinMSCTHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinMSCTHandler.swift; sourceTree = "<group>"; };
+		89A1CCC12EC703C100F0C378 /* DinMSCTOptionID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinMSCTOptionID.swift; sourceTree = "<group>"; };
+		89A1CCC22EC703C100F0C378 /* DinMSCTPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinMSCTPackage.swift; sourceTree = "<group>"; };
+		89A1CCC32EC703C100F0C378 /* DinMSCTRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinMSCTRequest.swift; sourceTree = "<group>"; };
+		89A1CCC42EC703C100F0C378 /* DinMSCTResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinMSCTResult.swift; sourceTree = "<group>"; };
+		89A1CCC52EC703C100F0C378 /* MSCT+DinExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MSCT+DinExtension.swift"; sourceTree = "<group>"; };
+		89A1CCC72EC703C100F0C378 /* DinCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinCommunication.swift; sourceTree = "<group>"; };
+		89A1CCC82EC703C100F0C378 /* DinCommunicationCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinCommunicationCallback.swift; sourceTree = "<group>"; };
+		89A1CCC92EC703C100F0C378 /* DinCommunicationDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinCommunicationDevice.swift; sourceTree = "<group>"; };
+		89A1CCCA2EC703C100F0C378 /* DinCommunicationEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinCommunicationEncryptor.swift; sourceTree = "<group>"; };
+		89A1CCCB2EC703C100F0C378 /* DinCommunicationGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinCommunicationGenerator.swift; sourceTree = "<group>"; };
+		89A1CCCC2EC703C100F0C378 /* DinCommunicationIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinCommunicationIdentity.swift; sourceTree = "<group>"; };
+		89A1CCCD2EC703C100F0C378 /* DinCommunicationRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinCommunicationRecord.swift; sourceTree = "<group>"; };
+		89A1CCCE2EC703C100F0C378 /* DinCommunicationRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinCommunicationRecorder.swift; sourceTree = "<group>"; };
+		89A1CCCF2EC703C100F0C378 /* DinCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinCommunicator.swift; sourceTree = "<group>"; };
+		89A1CCD02EC703C100F0C378 /* DinOtherCommunicationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinOtherCommunicationHandler.swift; sourceTree = "<group>"; };
+		89A1CCD22EC703C100F0C378 /* DinDeliver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDeliver.swift; sourceTree = "<group>"; };
+		89A1CCD32EC703C100F0C378 /* DinDeviceControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDeviceControl.swift; sourceTree = "<group>"; };
+		89A1CCD42EC703C100F0C378 /* DinDeviceKCPDelivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDeviceKCPDelivery.swift; sourceTree = "<group>"; };
+		89A1CCD52EC703C100F0C378 /* DinDeviceUDPDelivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDeviceUDPDelivery.swift; sourceTree = "<group>"; };
+		89A1CCD62EC703C100F0C378 /* DinP2PDeliver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinP2PDeliver.swift; sourceTree = "<group>"; };
+		89A1CCD72EC703C100F0C378 /* DinP2PDiscover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinP2PDiscover.swift; sourceTree = "<group>"; };
+		89A1CCD82EC703C100F0C378 /* DinProxyDeliver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinProxyDeliver.swift; sourceTree = "<group>"; };
+		89A1CCD92EC703C100F0C378 /* DinServerControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinServerControl.swift; sourceTree = "<group>"; };
+		89A1CCDC2EC703C100F0C378 /* Bool+DinExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+DinExtension.swift"; sourceTree = "<group>"; };
+		89A1CCDD2EC703C100F0C378 /* Data+DinExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+DinExtension.swift"; sourceTree = "<group>"; };
+		89A1CCDE2EC703C100F0C378 /* Double+DinExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+DinExtension.swift"; sourceTree = "<group>"; };
+		89A1CCDF2EC703C100F0C378 /* Int+DinExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+DinExtension.swift"; sourceTree = "<group>"; };
+		89A1CCE02EC703C100F0C378 /* String+DinExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DinExtension.swift"; sourceTree = "<group>"; };
+		89A1CCE12EC703C100F0C378 /* UIDevice+DinExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+DinExtension.swift"; sourceTree = "<group>"; };
+		89A1CCE32EC703C100F0C378 /* DinDataConvertor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDataConvertor.swift; sourceTree = "<group>"; };
+		89A1CCE42EC703C100F0C378 /* DinGCDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinGCDTimer.swift; sourceTree = "<group>"; };
+		89A1CCE52EC703C100F0C378 /* DinKcpConvUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinKcpConvUtil.swift; sourceTree = "<group>"; };
+		89A1CCE62EC703C100F0C378 /* DinLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinLog.swift; sourceTree = "<group>"; };
+		89A1CCE72EC703C100F0C378 /* DinLogStoreExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinLogStoreExporter.swift; sourceTree = "<group>"; };
+		89A1CCE82EC703C100F0C378 /* DinReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinReachability.swift; sourceTree = "<group>"; };
+		89A1CCE92EC703C100F0C378 /* DinSupportLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinSupportLogger.swift; sourceTree = "<group>"; };
+		89A1CCEA2EC703C100F0C378 /* DinSupportNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinSupportNotification.swift; sourceTree = "<group>"; };
+		89A1CCEB2EC703C100F0C378 /* DinSupportNotificationKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinSupportNotificationKey.swift; sourceTree = "<group>"; };
+		89A1CCEC2EC703C100F0C378 /* DinSupportQueueName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinSupportQueueName.swift; sourceTree = "<group>"; };
+		89A1CCEE2EC703C100F0C378 /* DinSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinSupport.swift; sourceTree = "<group>"; };
+		89A1CCEF2EC703C100F0C378 /* DinSupportConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinSupportConstants.swift; sourceTree = "<group>"; };
+		D37C733EE7B434C97578E974 /* Pods-DinSupport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinSupport.debug.xcconfig"; path = "Target Support Files/Pods-DinSupport/Pods-DinSupport.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		759490492A3302AD00B88E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D47635553C147CA1C02FDF8F /* libPods-DinSupport.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759490532A3302AD00B88E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759490572A3302AD00B88E86 /* DinSupport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		759490422A3302AD00B88E86 = {
+			isa = PBXGroup;
+			children = (
+				7594904E2A3302AD00B88E86 /* DinSupport */,
+				7594905A2A3302AD00B88E86 /* DinSupportTests */,
+				7594904D2A3302AD00B88E86 /* Products */,
+				BE7BCA644072125E10DDDEE0 /* Pods */,
+				84E9358D94E485404B89548A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7594904D2A3302AD00B88E86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7594904C2A3302AD00B88E86 /* DinSupport.framework */,
+				759490562A3302AD00B88E86 /* DinSupportTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7594904E2A3302AD00B88E86 /* DinSupport */ = {
+			isa = PBXGroup;
+			children = (
+				7594904F2A3302AD00B88E86 /* DinSupport.h */,
+				759490502A3302AD00B88E86 /* DinSupport.docc */,
+				759490A22A3305FD00B88E86 /* Source */,
+			);
+			path = DinSupport;
+			sourceTree = "<group>";
+		};
+		7594905A2A3302AD00B88E86 /* DinSupportTests */ = {
+			isa = PBXGroup;
+			children = (
+				7594905B2A3302AD00B88E86 /* DinSupportTests.swift */,
+			);
+			path = DinSupportTests;
+			sourceTree = "<group>";
+		};
+		759490A22A3305FD00B88E86 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCB52EC703C100F0C378 /* DinSupportObjC */,
+				89A1CCF02EC703C100F0C378 /* DinSupportSwift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		84E9358D94E485404B89548A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32268D81CFE5AE1A81BE6E81 /* libPods-DinSupport.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89A1CCA42EC703C100F0C378 /* Accessory */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CC9E2EC703C100F0C378 /* DinAccessoryStringEncryption.h */,
+				89A1CC9F2EC703C100F0C378 /* DinAccessoryStringEncryption.m */,
+				89A1CCA02EC703C100F0C378 /* DinAccessoryUtil.h */,
+				89A1CCA12EC703C100F0C378 /* DinAccessoryUtil.m */,
+				89A1CCA22EC703C100F0C378 /* NSData+Base64.h */,
+				89A1CCA32EC703C100F0C378 /* NSData+Base64.m */,
+			);
+			path = Accessory;
+			sourceTree = "<group>";
+		};
+		89A1CCA72EC703C100F0C378 /* Cryptor */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCA52EC703C100F0C378 /* NSData+Conversion.h */,
+				89A1CCA62EC703C100F0C378 /* NSData+Conversion.m */,
+			);
+			path = Cryptor;
+			sourceTree = "<group>";
+		};
+		89A1CCAA2EC703C100F0C378 /* KcpLib */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCA82EC703C100F0C378 /* CBIPAdress.h */,
+				89A1CCA92EC703C100F0C378 /* CBIPAdress.m */,
+			);
+			path = KcpLib;
+			sourceTree = "<group>";
+		};
+		89A1CCB22EC703C100F0C378 /* KCP */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCAA2EC703C100F0C378 /* KcpLib */,
+				89A1CCAB2EC703C100F0C378 /* cfunc.h */,
+				89A1CCAC2EC703C100F0C378 /* DSKcpUpdateTimer.h */,
+				89A1CCAD2EC703C100F0C378 /* DSKcpUpdateTimer.m */,
+				89A1CCAE2EC703C100F0C378 /* ikcp.h */,
+				89A1CCAF2EC703C100F0C378 /* ikcp.c */,
+				89A1CCB02EC703C100F0C378 /* KCPObject.h */,
+				89A1CCB12EC703C100F0C378 /* KCPObject.m */,
+			);
+			path = KCP;
+			sourceTree = "<group>";
+		};
+		89A1CCB32EC703C100F0C378 /* UDP */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCB22EC703C100F0C378 /* KCP */,
+			);
+			path = UDP;
+			sourceTree = "<group>";
+		};
+		89A1CCB42EC703C100F0C378 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCB32EC703C100F0C378 /* UDP */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		89A1CCB52EC703C100F0C378 /* DinSupportObjC */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCA42EC703C100F0C378 /* Accessory */,
+				89A1CCA72EC703C100F0C378 /* Cryptor */,
+				89A1CCB42EC703C100F0C378 /* Network */,
+			);
+			path = DinSupportObjC;
+			sourceTree = "<group>";
+		};
+		89A1CCB72EC703C100F0C378 /* Accessory */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCB62EC703C100F0C378 /* DinAccessory.swift */,
+			);
+			path = Accessory;
+			sourceTree = "<group>";
+		};
+		89A1CCBC2EC703C100F0C378 /* Cryptor */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCB82EC703C100F0C378 /* Cryptor.swift */,
+				89A1CCB92EC703C100F0C378 /* DinsaferAESCBCCryptor+Method.swift */,
+				89A1CCBA2EC703C100F0C378 /* DinsaferAESCFBCryptor+Method.swift */,
+				89A1CCBB2EC703C100F0C378 /* DinsaferRC4Cryptor+Method.swift */,
+			);
+			path = Cryptor;
+			sourceTree = "<group>";
+		};
+		89A1CCBF2EC703C100F0C378 /* MSCT */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCBD2EC703C100F0C378 /* Header.swift */,
+				89A1CCBE2EC703C100F0C378 /* MSCT.swift */,
+			);
+			path = MSCT;
+			sourceTree = "<group>";
+		};
+		89A1CCC62EC703C100F0C378 /* MSCTCommon */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCC02EC703C100F0C378 /* DinMSCTHandler.swift */,
+				89A1CCC12EC703C100F0C378 /* DinMSCTOptionID.swift */,
+				89A1CCC22EC703C100F0C378 /* DinMSCTPackage.swift */,
+				89A1CCC32EC703C100F0C378 /* DinMSCTRequest.swift */,
+				89A1CCC42EC703C100F0C378 /* DinMSCTResult.swift */,
+				89A1CCC52EC703C100F0C378 /* MSCT+DinExtension.swift */,
+			);
+			path = MSCTCommon;
+			sourceTree = "<group>";
+		};
+		89A1CCD12EC703C100F0C378 /* MSCTCommunitcate */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCC72EC703C100F0C378 /* DinCommunication.swift */,
+				89A1CCC82EC703C100F0C378 /* DinCommunicationCallback.swift */,
+				89A1CCC92EC703C100F0C378 /* DinCommunicationDevice.swift */,
+				89A1CCCA2EC703C100F0C378 /* DinCommunicationEncryptor.swift */,
+				89A1CCCB2EC703C100F0C378 /* DinCommunicationGenerator.swift */,
+				89A1CCCC2EC703C100F0C378 /* DinCommunicationIdentity.swift */,
+				89A1CCCD2EC703C100F0C378 /* DinCommunicationRecord.swift */,
+				89A1CCCE2EC703C100F0C378 /* DinCommunicationRecorder.swift */,
+				89A1CCCF2EC703C100F0C378 /* DinCommunicator.swift */,
+				89A1CCD02EC703C100F0C378 /* DinOtherCommunicationHandler.swift */,
+			);
+			path = MSCTCommunitcate;
+			sourceTree = "<group>";
+		};
+		89A1CCDA2EC703C100F0C378 /* UDP */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCBF2EC703C100F0C378 /* MSCT */,
+				89A1CCC62EC703C100F0C378 /* MSCTCommon */,
+				89A1CCD12EC703C100F0C378 /* MSCTCommunitcate */,
+				89A1CCD22EC703C100F0C378 /* DinDeliver.swift */,
+				89A1CCD32EC703C100F0C378 /* DinDeviceControl.swift */,
+				89A1CCD42EC703C100F0C378 /* DinDeviceKCPDelivery.swift */,
+				89A1CCD52EC703C100F0C378 /* DinDeviceUDPDelivery.swift */,
+				89A1CCD62EC703C100F0C378 /* DinP2PDeliver.swift */,
+				89A1CCD72EC703C100F0C378 /* DinP2PDiscover.swift */,
+				89A1CCD82EC703C100F0C378 /* DinProxyDeliver.swift */,
+				89A1CCD92EC703C100F0C378 /* DinServerControl.swift */,
+			);
+			path = UDP;
+			sourceTree = "<group>";
+		};
+		89A1CCDB2EC703C100F0C378 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCDA2EC703C100F0C378 /* UDP */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		89A1CCE22EC703C100F0C378 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCDC2EC703C100F0C378 /* Bool+DinExtension.swift */,
+				89A1CCDD2EC703C100F0C378 /* Data+DinExtension.swift */,
+				89A1CCDE2EC703C100F0C378 /* Double+DinExtension.swift */,
+				89A1CCDF2EC703C100F0C378 /* Int+DinExtension.swift */,
+				89A1CCE02EC703C100F0C378 /* String+DinExtension.swift */,
+				89A1CCE12EC703C100F0C378 /* UIDevice+DinExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		89A1CCED2EC703C100F0C378 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCE22EC703C100F0C378 /* Extension */,
+				89A1CCE32EC703C100F0C378 /* DinDataConvertor.swift */,
+				89A1CCE42EC703C100F0C378 /* DinGCDTimer.swift */,
+				89A1CCE52EC703C100F0C378 /* DinKcpConvUtil.swift */,
+				89A1CCE62EC703C100F0C378 /* DinLog.swift */,
+				89A1CCE72EC703C100F0C378 /* DinLogStoreExporter.swift */,
+				89A1CCE82EC703C100F0C378 /* DinReachability.swift */,
+				89A1CCE92EC703C100F0C378 /* DinSupportLogger.swift */,
+				89A1CCEA2EC703C100F0C378 /* DinSupportNotification.swift */,
+				89A1CCEB2EC703C100F0C378 /* DinSupportNotificationKey.swift */,
+				89A1CCEC2EC703C100F0C378 /* DinSupportQueueName.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		89A1CCF02EC703C100F0C378 /* DinSupportSwift */ = {
+			isa = PBXGroup;
+			children = (
+				89A1CCB72EC703C100F0C378 /* Accessory */,
+				89A1CCBC2EC703C100F0C378 /* Cryptor */,
+				89A1CCDB2EC703C100F0C378 /* Network */,
+				89A1CCED2EC703C100F0C378 /* Utils */,
+				89A1CCEE2EC703C100F0C378 /* DinSupport.swift */,
+				89A1CCEF2EC703C100F0C378 /* DinSupportConstants.swift */,
+			);
+			path = DinSupportSwift;
+			sourceTree = "<group>";
+		};
+		BE7BCA644072125E10DDDEE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D37C733EE7B434C97578E974 /* Pods-DinSupport.debug.xcconfig */,
+				01C4684F7B8A54C4B275A824 /* Pods-DinSupport.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../DinArchiver/Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		759490472A3302AD00B88E86 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7594905D2A3302AD00B88E86 /* DinSupport.h in Headers */,
+				89A1CD2A2EC703C100F0C378 /* cfunc.h in Headers */,
+				89A1CD2B2EC703C100F0C378 /* DinAccessoryUtil.h in Headers */,
+				89A1CD2C2EC703C100F0C378 /* ikcp.h in Headers */,
+				89A1CD2D2EC703C100F0C378 /* DSKcpUpdateTimer.h in Headers */,
+				89A1CD2E2EC703C100F0C378 /* KCPObject.h in Headers */,
+				89A1CD2F2EC703C100F0C378 /* NSData+Base64.h in Headers */,
+				89A1CD302EC703C100F0C378 /* CBIPAdress.h in Headers */,
+				89A1CD312EC703C100F0C378 /* NSData+Conversion.h in Headers */,
+				89A1CD322EC703C100F0C378 /* DinAccessoryStringEncryption.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7594904B2A3302AD00B88E86 /* DinSupport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 759490602A3302AD00B88E86 /* Build configuration list for PBXNativeTarget "DinSupport" */;
+			buildPhases = (
+				6DAA7AA36F743CE821447316 /* [CP] Check Pods Manifest.lock */,
+				759490472A3302AD00B88E86 /* Headers */,
+				759490482A3302AD00B88E86 /* Sources */,
+				759490492A3302AD00B88E86 /* Frameworks */,
+				7594904A2A3302AD00B88E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DinSupport;
+			productName = DinSupport;
+			productReference = 7594904C2A3302AD00B88E86 /* DinSupport.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		759490552A3302AD00B88E86 /* DinSupportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 759490632A3302AD00B88E86 /* Build configuration list for PBXNativeTarget "DinSupportTests" */;
+			buildPhases = (
+				759490522A3302AD00B88E86 /* Sources */,
+				759490532A3302AD00B88E86 /* Frameworks */,
+				759490542A3302AD00B88E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				759490592A3302AD00B88E86 /* PBXTargetDependency */,
+			);
+			name = DinSupportTests;
+			productName = DinSupportTests;
+			productReference = 759490562A3302AD00B88E86 /* DinSupportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		759490432A3302AD00B88E86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					7594904B2A3302AD00B88E86 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					759490552A3302AD00B88E86 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 759490462A3302AD00B88E86 /* Build configuration list for PBXProject "DinSupport" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 759490422A3302AD00B88E86;
+			productRefGroup = 7594904D2A3302AD00B88E86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7594904B2A3302AD00B88E86 /* DinSupport */,
+				759490552A3302AD00B88E86 /* DinSupportTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7594904A2A3302AD00B88E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759490542A3302AD00B88E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DAA7AA36F743CE821447316 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DinSupport-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		759490482A3302AD00B88E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759490512A3302AD00B88E86 /* DinSupport.docc in Sources */,
+				89A1CCF12EC703C100F0C378 /* Cryptor.swift in Sources */,
+				89A1CCF22EC703C100F0C378 /* DinDeviceKCPDelivery.swift in Sources */,
+				89A1CCF32EC703C100F0C378 /* DinKcpConvUtil.swift in Sources */,
+				89A1CCF42EC703C100F0C378 /* DinAccessoryStringEncryption.m in Sources */,
+				89A1CCF52EC703C100F0C378 /* DinCommunicationCallback.swift in Sources */,
+				89A1CCF62EC703C100F0C378 /* UIDevice+DinExtension.swift in Sources */,
+				89A1CCF72EC703C100F0C378 /* MSCT+DinExtension.swift in Sources */,
+				89A1CCF82EC703C100F0C378 /* DinDeviceUDPDelivery.swift in Sources */,
+				89A1CCF92EC703C100F0C378 /* DinCommunicator.swift in Sources */,
+				89A1CCFA2EC703C100F0C378 /* DinProxyDeliver.swift in Sources */,
+				89A1CCFB2EC703C100F0C378 /* DinCommunicationDevice.swift in Sources */,
+				89A1CCFC2EC703C100F0C378 /* DinSupportNotificationKey.swift in Sources */,
+				89A1CCFD2EC703C100F0C378 /* DinOtherCommunicationHandler.swift in Sources */,
+				89A1CCFE2EC703C100F0C378 /* DinLogStoreExporter.swift in Sources */,
+				89A1CCFF2EC703C100F0C378 /* Bool+DinExtension.swift in Sources */,
+				89A1CD002EC703C100F0C378 /* DinCommunicationRecord.swift in Sources */,
+				89A1CD012EC703C100F0C378 /* Double+DinExtension.swift in Sources */,
+				89A1CD022EC703C100F0C378 /* Int+DinExtension.swift in Sources */,
+				89A1CD032EC703C100F0C378 /* DinSupport.swift in Sources */,
+				89A1CD042EC703C100F0C378 /* DinP2PDeliver.swift in Sources */,
+				89A1CD052EC703C100F0C378 /* DinCommunication.swift in Sources */,
+				89A1CD062EC703C100F0C378 /* DinSupportConstants.swift in Sources */,
+				89A1CD072EC703C100F0C378 /* DinCommunicationIdentity.swift in Sources */,
+				89A1CD082EC703C100F0C378 /* DSKcpUpdateTimer.m in Sources */,
+				89A1CD092EC703C100F0C378 /* DinP2PDiscover.swift in Sources */,
+				89A1CD0A2EC703C100F0C378 /* DinMSCTResult.swift in Sources */,
+				89A1CD0B2EC703C100F0C378 /* DinsaferAESCFBCryptor+Method.swift in Sources */,
+				89A1CD0C2EC703C100F0C378 /* DinMSCTHandler.swift in Sources */,
+				89A1CD0D2EC703C100F0C378 /* NSData+Conversion.m in Sources */,
+				89A1CD0E2EC703C100F0C378 /* DinAccessory.swift in Sources */,
+				89A1CD0F2EC703C100F0C378 /* Data+DinExtension.swift in Sources */,
+				89A1CD102EC703C100F0C378 /* DinMSCTPackage.swift in Sources */,
+				89A1CD112EC703C100F0C378 /* DinDeviceControl.swift in Sources */,
+				89A1CD122EC703C100F0C378 /* Header.swift in Sources */,
+				89A1CD132EC703C100F0C378 /* DinDeliver.swift in Sources */,
+				89A1CD142EC703C100F0C378 /* DinMSCTOptionID.swift in Sources */,
+				89A1CD152EC703C100F0C378 /* DinDataConvertor.swift in Sources */,
+				89A1CD162EC703C100F0C378 /* DinCommunicationRecorder.swift in Sources */,
+				89A1CD172EC703C100F0C378 /* DinsaferAESCBCCryptor+Method.swift in Sources */,
+				89A1CD182EC703C100F0C378 /* DinGCDTimer.swift in Sources */,
+				89A1CD192EC703C100F0C378 /* NSData+Base64.m in Sources */,
+				89A1CD1A2EC703C100F0C378 /* DinSupportLogger.swift in Sources */,
+				89A1CD1B2EC703C100F0C378 /* DinMSCTRequest.swift in Sources */,
+				89A1CD1C2EC703C100F0C378 /* DinReachability.swift in Sources */,
+				89A1CD1D2EC703C100F0C378 /* MSCT.swift in Sources */,
+				89A1CD1E2EC703C100F0C378 /* CBIPAdress.m in Sources */,
+				89A1CD1F2EC703C100F0C378 /* String+DinExtension.swift in Sources */,
+				89A1CD202EC703C100F0C378 /* DinCommunicationGenerator.swift in Sources */,
+				89A1CD212EC703C100F0C378 /* KCPObject.m in Sources */,
+				89A1CD222EC703C100F0C378 /* DinCommunicationEncryptor.swift in Sources */,
+				89A1CD232EC703C100F0C378 /* DinAccessoryUtil.m in Sources */,
+				89A1CD242EC703C100F0C378 /* DinServerControl.swift in Sources */,
+				89A1CD252EC703C100F0C378 /* DinLog.swift in Sources */,
+				89A1CD262EC703C100F0C378 /* DinSupportQueueName.swift in Sources */,
+				89A1CD272EC703C100F0C378 /* DinsaferRC4Cryptor+Method.swift in Sources */,
+				89A1CD282EC703C100F0C378 /* DinSupportNotification.swift in Sources */,
+				89A1CD292EC703C100F0C378 /* ikcp.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759490522A3302AD00B88E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7594905C2A3302AD00B88E86 /* DinSupportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		759490592A3302AD00B88E86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7594904B2A3302AD00B88E86 /* DinSupport */;
+			targetProxy = 759490582A3302AD00B88E86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7594905E2A3302AD00B88E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7594905F2A3302AD00B88E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		759490612A3302AD00B88E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D37C733EE7B434C97578E974 /* Pods-DinSupport.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinsafe.DinSupport;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		759490622A3302AD00B88E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01C4684F7B8A54C4B275A824 /* Pods-DinSupport.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinsafe.DinSupport;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		759490642A3302AD00B88E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinsafe.DinSupportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		759490652A3302AD00B88E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinsafe.DinSupportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		759490462A3302AD00B88E86 /* Build configuration list for PBXProject "DinSupport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7594905E2A3302AD00B88E86 /* Debug */,
+				7594905F2A3302AD00B88E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		759490602A3302AD00B88E86 /* Build configuration list for PBXNativeTarget "DinSupport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				759490612A3302AD00B88E86 /* Debug */,
+				759490622A3302AD00B88E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		759490632A3302AD00B88E86 /* Build configuration list for PBXNativeTarget "DinSupportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				759490642A3302AD00B88E86 /* Debug */,
+				759490652A3302AD00B88E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 759490432A3302AD00B88E86 /* Project object */;
+}
