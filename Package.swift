@@ -20,13 +20,18 @@ let package = Package(
         // 纯 Objective-C Target（参数顺序完全正确）
         .target(
             name: "DinSupportObjC",
-            dependencies: [],
+            dependencies: [
+                .product(name: "CocoaAsyncSocket", package: "CocoaAsyncSocket")
+            ],
             path: "DinSupport/Source/DinSupportObjC",
             sources: ["."],
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("."),
-                .define("SWIFT_PACKAGE")
+                .headerSearchPath("./iCoAP"),
+                .headerSearchPath("./Modules"), 
+                .define("SWIFT_PACKAGE"),
+                .headerSearchPath("${SWIFT_PACKAGE}/.build/SourcePackages/checkouts/CocoaAsyncSocket")
             ],
             linkerSettings: [
                 .linkedFramework("Foundation"),

@@ -1,0 +1,14 @@
+//
+//  Header.h
+//  DinSupport
+//
+//  Created by YRS on 2025/11/17.
+//
+
+// DinSupport/Source/DinSupportObjC/Modules/module.modulemap
+module CocoaAsyncSocket {
+    header "${SWIFT_PACKAGE}/.build/SourcePackages/checkouts/CocoaAsyncSocket/GCDAsyncUdpSocket.h"
+    header "${SWIFT_PACKAGE}/.build/SourcePackages/checkouts/CocoaAsyncSocket/GCDAsyncSocket.h"
+    header "${SWIFT_PACKAGE}/.build/SourcePackages/checkouts/CocoaAsyncSocket/GCDAsyncSocketDelegate.h"
+    export *
+}
