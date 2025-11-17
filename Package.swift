@@ -12,9 +12,9 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/ZipArchive/ZipArchive.git", from: "2.4.3"),
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift", from:"1.8.4"),
-        .package(url: "https://github.com/robbiehanson/CocoaAsyncSocket.git", from:"7.6.5")
+        .package(url: "https://github.com/ZipArchive/ZipArchive.git", exact: "2.4.3"),
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift", exact:"1.8.4"),
+        .package(url: "https://github.com/robbiehanson/CocoaAsyncSocket.git", exact:"7.6.5")
      ],
     targets: [
         // 纯 Objective-C Target（参数顺序完全正确）
@@ -29,7 +29,6 @@ let package = Package(
             cSettings: [
                 .headerSearchPath("."),
                 .headerSearchPath("./iCoAP"),
-                .headerSearchPath("./Modules"), 
                 .define("SWIFT_PACKAGE"),
                 .headerSearchPath("${SWIFT_PACKAGE}/.build/SourcePackages/checkouts/CocoaAsyncSocket")
             ],
