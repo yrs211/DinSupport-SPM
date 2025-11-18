@@ -1,21 +1,21 @@
 // swift-tools-version: 5.9
-import PackageDescription 
+import PackageDescription
 
 let package = Package(
     name: "DinSupport",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "DinSupport",
             type: .dynamic,
-            targets: ["DinSupportSwift"]  // 👉 关键：改为 Swift Target 名（之前写的 "DinSupport" 不存在）
+            targets: ["DinSupport"]  // 👉 关键：改为 Swift Target 名（之前写的 "DinSupport" 不存在）
         ),
     ],
     dependencies: [
         .package(url: "https://github.com/ZipArchive/ZipArchive.git", exact: "2.4.3"),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift", exact:"1.8.4"),
         .package(url: "https://github.com/robbiehanson/CocoaAsyncSocket.git", exact:"7.6.5")
-     ],
+    ],
     targets: [
         // 纯 Objective-C Target（参数顺序完全正确）
         .target(
@@ -55,6 +55,14 @@ let package = Package(
                 .linkedFramework("Foundation"),
                 .linkedFramework("UIKit")
             ]
+        ),
+        // 3. 新增：聚合 Target（对外暴露统一模块名 DinSupport）
+        .target(
+            name: "DinSupport",  // 模块名和产物名一致
+            dependencies: [
+                .target(name: "DinSupportSwift"),  // 依赖 Swift 子 Target
+                .target(name: "DinSupportObjC")    // 依赖 Objective-C 子 Target
+            ],
         )
     ]
 )
