@@ -49,6 +49,6 @@ extension MSCT {
     ///
     /// - Returns: method数值（若不能找到，返回nil）
     public func method() -> [UInt8]? {
-        return self.optionHeader?[DinMSCTOptionID.method]?.data?.bytes
+        return self.optionHeader?[DinMSCTOptionID.method]?.data?.dataBytes
     }
 }

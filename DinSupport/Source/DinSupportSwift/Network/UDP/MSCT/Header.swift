@@ -192,7 +192,7 @@ extension OptionHeader {
         results.append(UInt8(data?.count ?? 0) & 0b01111111)
         results.append(id)
         if let `data` = data {
-            results.append(contentsOf: data.bytes)
+            results.append(contentsOf: data.dataBytes)
         }
         return results
     }

@@ -56,7 +56,7 @@ public struct MSCT {
 
     /// 根据传入的数据生成MSCT对象
     public init(data: Data) throws {
-        let bytes = data.bytes
+        let bytes = data.dataBytes
 
         // 少于Header长度 不合法
         if bytes.count < minHeaderLength {
@@ -147,18 +147,13 @@ public struct MSCT {
 
         // 插入数据
         if let `payload` = payload {
-            results.append(contentsOf: payload.bytes)
+            results.append(contentsOf: payload.dataBytes)
         }
 
         return results.data
     }
 }
 
-public extension Data {
-    var bytes: [UInt8] {
-        return [UInt8](self)
-    }
-}
 
 public extension Array where Element == UInt8 {
     var data: Data {

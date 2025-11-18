@@ -487,7 +487,7 @@ extension DinDeliver: GCDAsyncUdpSocketDelegate {
         // 收到的消息【并发队列】
 //        if ipAdress != "mm01.sca.im" && !ipAdress.contains("192") {
 //        }
-        let bytes = data.bytes
+        let bytes = data.dataBytes
         if bytes.count > 4, (bytes[0] >> 6) == 0b10 {
             // kcp data 前面32个bit就是conv, conv 头两个是10，就是目标kcp
             // 获取convString
