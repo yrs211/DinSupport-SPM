@@ -61,7 +61,6 @@ let package = Package(
             name: "DinSupport",  // 模块名和产物名一致
             dependencies: [
                 .target(name: "DinSupportSwift"),  // 依赖 Swift 子 Target
-                .target(name: "DinSupportObjC")    // 依赖 Objective-C 子 Target
             ],
         )
     ]
