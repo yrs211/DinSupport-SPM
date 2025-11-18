@@ -42,7 +42,7 @@ let package = Package(
         
         // 纯 Swift Target（终极正确顺序：name → dependencies → path → sources → linkerSettings）
         .target(
-            name: "DinSupportSwift",
+            name: "DinSupport",
             dependencies: [
                 .target(name: "DinSupportObjC"),
                 .product(name: "ZipArchive", package: "ZipArchive"),
@@ -56,12 +56,5 @@ let package = Package(
                 .linkedFramework("UIKit")
             ]
         ),
-        // 3. 新增：聚合 Target（对外暴露统一模块名 DinSupport）
-        .target(
-            name: "DinSupport",  // 模块名和产物名一致
-            dependencies: [
-                .target(name: "DinSupportSwift"),  // 依赖 Swift 子 Target
-            ],
-        )
     ]
 )
