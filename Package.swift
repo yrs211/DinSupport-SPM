@@ -51,6 +51,9 @@ let package = Package(
             ],
             path: "DinSupport/Source/DinSupportSwift",  // 1. path 在前
             sources: ["."],           // 2. sources 在后（必须在 path 之后）
+            swiftSettings: [
+                          .define("ENABLE_LOG")
+                      ],
             linkerSettings: [
                 .linkedFramework("Foundation"),
                 .linkedFramework("UIKit")
